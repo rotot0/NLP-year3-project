@@ -1,0 +1,18 @@
+val ppl: 1.592;
+kaggle: 0.371
+epoch: 15
+opt: adam, 0.001
+
+Seq2Seq(
+  (encoder): Encoder(
+    (embedding): Embedding(32, 128)
+    (rnn): LSTM(128, 256, num_layers=2, dropout=0.3)
+    (dropout): Dropout(p=0.3, inplace=False)
+  )
+  (decoder): Decoder(
+    (embedding): Embedding(43, 128)
+    (rnn): LSTM(128, 256, num_layers=2, dropout=0.3)
+    (fc_out): Linear(in_features=256, out_features=43, bias=True)
+    (dropout): Dropout(p=0.3, inplace=False)
+  )
+)
